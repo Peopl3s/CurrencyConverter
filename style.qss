@@ -1,0 +1,56 @@
+QComboBox {
+    border: 1px solid black;
+   
+    min-width: 5em;
+    min-height: 3.2em;
+    padding-left: 40px;
+spacing:5 px;
+background-color: #7ed04a;
+
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+
+
+
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+padding-right: 10px;
+
+    border-left-width: 1px;
+    border-left-color: #7ed04a;;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(up_arrow.png);
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    image: url(up_arrow2.png);
+}
+
+QLineEdit {
+    border: 1px solid black;
+border-left: 0px;
+    padding:1px 18px 1px 3px;
+    background: white;
+    min-height: 3.1em;
+    selection-background-color: darkgray;
+background-color: #7ed04a;
+
+}
+
+QLabel{
+color: white;
+font-size: 14px;
+}
+
